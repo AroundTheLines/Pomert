@@ -99,19 +99,21 @@ mainMenu.on('select', function(event) {
 });
 
 function pomodoro(){
-  worktime();
+      setInterval(worktime(),30000);
+        setInterval(worktime(),30000);
+        setInterval(worktime(),30000);
   //while(timerStarted){
-    setTimeout(breaktime(),1500000);
-    setTimeout(worktime(),300000);
+  //  setTimeout(breaktime(),1500000);
+//    setTimeout(worktime(),300000);
   //}
 }
-
+/*
 function breaktime(){
   //vibrate
   vibe.vibrate();
   Pebble.showSimpleNotificationOnPebble("Break!", "Break time!");
 
-}
+}*/
 
 function worktime(){
   //vibrate
